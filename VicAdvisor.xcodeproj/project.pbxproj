@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95EBA50128D7DAD600AA3CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA50028D7DAD600AA3CC8 /* AppDelegate.swift */; };
+		95EBA50328D7DAD600AA3CC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA50228D7DAD600AA3CC8 /* SceneDelegate.swift */; };
+		95EBA50528D7DAD600AA3CC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA50428D7DAD600AA3CC8 /* ViewController.swift */; };
+		95EBA50828D7DAD600AA3CC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EBA50628D7DAD600AA3CC8 /* Main.storyboard */; };
+		95EBA50A28D7DAD900AA3CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95EBA50928D7DAD900AA3CC8 /* Assets.xcassets */; };
+		95EBA50D28D7DAD900AA3CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95EBA50B28D7DAD900AA3CC8 /* LaunchScreen.storyboard */; };
+		95EBA51828D7DADA00AA3CC8 /* VicAdvisorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA51728D7DADA00AA3CC8 /* VicAdvisorTests.swift */; };
+		95EBA52228D7DADA00AA3CC8 /* VicAdvisorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA52128D7DADA00AA3CC8 /* VicAdvisorUITests.swift */; };
+		95EBA52428D7DADA00AA3CC8 /* VicAdvisorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA52328D7DADA00AA3CC8 /* VicAdvisorUITestsLaunchTests.swift */; };
+		95EBA53628D7DB4300AA3CC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA53528D7DB4300AA3CC8 /* Constants.swift */; };
+		95EBA53828D7DB6000AA3CC8 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA53728D7DB6000AA3CC8 /* UIImage+Extension.swift */; };
+		95EBA53A28D7DB7D00AA3CC8 /* BaseRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA53928D7DB7D00AA3CC8 /* BaseRestClient.swift */; };
+		95EBA53C28D7DBA900AA3CC8 /* VicAdvisorApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA53B28D7DBA900AA3CC8 /* VicAdvisorApiClient.swift */; };
+		95EBA53E28D7DBCD00AA3CC8 /* RestaurantResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA53D28D7DBCD00AA3CC8 /* RestaurantResult.swift */; };
+		95EBA54028D7DBEB00AA3CC8 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA53F28D7DBEB00AA3CC8 /* RestaurantCell.swift */; };
+		95EBA54228D7DC0C00AA3CC8 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA54128D7DC0C00AA3CC8 /* MainPresenter.swift */; };
+		95EBA54428D7DC2400AA3CC8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EBA54328D7DC2400AA3CC8 /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95EBA51428D7DADA00AA3CC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95EBA4F528D7DAD600AA3CC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95EBA4FC28D7DAD600AA3CC8;
+			remoteInfo = VicAdvisor;
+		};
+		95EBA51E28D7DADA00AA3CC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95EBA4F528D7DAD600AA3CC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95EBA4FC28D7DAD600AA3CC8;
+			remoteInfo = VicAdvisor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95EBA4FD28D7DAD600AA3CC8 /* VicAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VicAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95EBA50028D7DAD600AA3CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95EBA50228D7DAD600AA3CC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95EBA50428D7DAD600AA3CC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95EBA50728D7DAD600AA3CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95EBA50928D7DAD900AA3CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95EBA50C28D7DAD900AA3CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95EBA50E28D7DAD900AA3CC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95EBA51328D7DADA00AA3CC8 /* VicAdvisorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VicAdvisorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95EBA51728D7DADA00AA3CC8 /* VicAdvisorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VicAdvisorTests.swift; sourceTree = "<group>"; };
+		95EBA51D28D7DADA00AA3CC8 /* VicAdvisorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VicAdvisorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95EBA52128D7DADA00AA3CC8 /* VicAdvisorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VicAdvisorUITests.swift; sourceTree = "<group>"; };
+		95EBA52328D7DADA00AA3CC8 /* VicAdvisorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VicAdvisorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		95EBA53528D7DB4300AA3CC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		95EBA53728D7DB6000AA3CC8 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		95EBA53928D7DB7D00AA3CC8 /* BaseRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRestClient.swift; sourceTree = "<group>"; };
+		95EBA53B28D7DBA900AA3CC8 /* VicAdvisorApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VicAdvisorApiClient.swift; sourceTree = "<group>"; };
+		95EBA53D28D7DBCD00AA3CC8 /* RestaurantResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantResult.swift; sourceTree = "<group>"; };
+		95EBA53F28D7DBEB00AA3CC8 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		95EBA54128D7DC0C00AA3CC8 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		95EBA54328D7DC2400AA3CC8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95EBA4FA28D7DAD600AA3CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95EBA51028D7DADA00AA3CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95EBA51A28D7DADA00AA3CC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95EBA4F428D7DAD600AA3CC8 = {
+			isa = PBXGroup;
+			children = (
+				95EBA4FF28D7DAD600AA3CC8 /* VicAdvisor */,
+				95EBA51628D7DADA00AA3CC8 /* VicAdvisorTests */,
+				95EBA52028D7DADA00AA3CC8 /* VicAdvisorUITests */,
+				95EBA4FE28D7DAD600AA3CC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95EBA4FE28D7DAD600AA3CC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA4FD28D7DAD600AA3CC8 /* VicAdvisor.app */,
+				95EBA51328D7DADA00AA3CC8 /* VicAdvisorTests.xctest */,
+				95EBA51D28D7DADA00AA3CC8 /* VicAdvisorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95EBA4FF28D7DAD600AA3CC8 /* VicAdvisor */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA53428D7DB1300AA3CC8 /* Helper */,
+				95EBA53328D7DB0700AA3CC8 /* Service */,
+				95EBA53228D7DB0000AA3CC8 /* Model */,
+				95EBA53028D7DAEA00AA3CC8 /* Presentation */,
+				95EBA50028D7DAD600AA3CC8 /* AppDelegate.swift */,
+				95EBA50228D7DAD600AA3CC8 /* SceneDelegate.swift */,
+				95EBA50428D7DAD600AA3CC8 /* ViewController.swift */,
+				95EBA50628D7DAD600AA3CC8 /* Main.storyboard */,
+				95EBA50928D7DAD900AA3CC8 /* Assets.xcassets */,
+				95EBA50B28D7DAD900AA3CC8 /* LaunchScreen.storyboard */,
+				95EBA50E28D7DAD900AA3CC8 /* Info.plist */,
+			);
+			path = VicAdvisor;
+			sourceTree = "<group>";
+		};
+		95EBA51628D7DADA00AA3CC8 /* VicAdvisorTests */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA51728D7DADA00AA3CC8 /* VicAdvisorTests.swift */,
+			);
+			path = VicAdvisorTests;
+			sourceTree = "<group>";
+		};
+		95EBA52028D7DADA00AA3CC8 /* VicAdvisorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA52128D7DADA00AA3CC8 /* VicAdvisorUITests.swift */,
+				95EBA52328D7DADA00AA3CC8 /* VicAdvisorUITestsLaunchTests.swift */,
+			);
+			path = VicAdvisorUITests;
+			sourceTree = "<group>";
+		};
+		95EBA53028D7DAEA00AA3CC8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA53128D7DAF200AA3CC8 /* MainView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		95EBA53128D7DAF200AA3CC8 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA53F28D7DBEB00AA3CC8 /* RestaurantCell.swift */,
+				95EBA54128D7DC0C00AA3CC8 /* MainPresenter.swift */,
+				95EBA54328D7DC2400AA3CC8 /* MainViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		95EBA53228D7DB0000AA3CC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA53D28D7DBCD00AA3CC8 /* RestaurantResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95EBA53328D7DB0700AA3CC8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA53928D7DB7D00AA3CC8 /* BaseRestClient.swift */,
+				95EBA53B28D7DBA900AA3CC8 /* VicAdvisorApiClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		95EBA53428D7DB1300AA3CC8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				95EBA53528D7DB4300AA3CC8 /* Constants.swift */,
+				95EBA53728D7DB6000AA3CC8 /* UIImage+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95EBA4FC28D7DAD600AA3CC8 /* VicAdvisor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95EBA52728D7DADA00AA3CC8 /* Build configuration list for PBXNativeTarget "VicAdvisor" */;
+			buildPhases = (
+				95EBA4F928D7DAD600AA3CC8 /* Sources */,
+				95EBA4FA28D7DAD600AA3CC8 /* Frameworks */,
+				95EBA4FB28D7DAD600AA3CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VicAdvisor;
+			productName = VicAdvisor;
+			productReference = 95EBA4FD28D7DAD600AA3CC8 /* VicAdvisor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95EBA51228D7DADA00AA3CC8 /* VicAdvisorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95EBA52A28D7DADA00AA3CC8 /* Build configuration list for PBXNativeTarget "VicAdvisorTests" */;
+			buildPhases = (
+				95EBA50F28D7DADA00AA3CC8 /* Sources */,
+				95EBA51028D7DADA00AA3CC8 /* Frameworks */,
+				95EBA51128D7DADA00AA3CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95EBA51528D7DADA00AA3CC8 /* PBXTargetDependency */,
+			);
+			name = VicAdvisorTests;
+			productName = VicAdvisorTests;
+			productReference = 95EBA51328D7DADA00AA3CC8 /* VicAdvisorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95EBA51C28D7DADA00AA3CC8 /* VicAdvisorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95EBA52D28D7DADA00AA3CC8 /* Build configuration list for PBXNativeTarget "VicAdvisorUITests" */;
+			buildPhases = (
+				95EBA51928D7DADA00AA3CC8 /* Sources */,
+				95EBA51A28D7DADA00AA3CC8 /* Frameworks */,
+				95EBA51B28D7DADA00AA3CC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95EBA51F28D7DADA00AA3CC8 /* PBXTargetDependency */,
+			);
+			name = VicAdvisorUITests;
+			productName = VicAdvisorUITests;
+			productReference = 95EBA51D28D7DADA00AA3CC8 /* VicAdvisorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95EBA4F528D7DAD600AA3CC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					95EBA4FC28D7DAD600AA3CC8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					95EBA51228D7DADA00AA3CC8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 95EBA4FC28D7DAD600AA3CC8;
+					};
+					95EBA51C28D7DADA00AA3CC8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 95EBA4FC28D7DAD600AA3CC8;
+					};
+				};
+			};
+			buildConfigurationList = 95EBA4F828D7DAD600AA3CC8 /* Build configuration list for PBXProject "VicAdvisor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95EBA4F428D7DAD600AA3CC8;
+			productRefGroup = 95EBA4FE28D7DAD600AA3CC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95EBA4FC28D7DAD600AA3CC8 /* VicAdvisor */,
+				95EBA51228D7DADA00AA3CC8 /* VicAdvisorTests */,
+				95EBA51C28D7DADA00AA3CC8 /* VicAdvisorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95EBA4FB28D7DAD600AA3CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EBA50D28D7DAD900AA3CC8 /* LaunchScreen.storyboard in Resources */,
+				95EBA50A28D7DAD900AA3CC8 /* Assets.xcassets in Resources */,
+				95EBA50828D7DAD600AA3CC8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95EBA51128D7DADA00AA3CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95EBA51B28D7DADA00AA3CC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95EBA4F928D7DAD600AA3CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EBA54028D7DBEB00AA3CC8 /* RestaurantCell.swift in Sources */,
+				95EBA54428D7DC2400AA3CC8 /* MainViewController.swift in Sources */,
+				95EBA53C28D7DBA900AA3CC8 /* VicAdvisorApiClient.swift in Sources */,
+				95EBA53E28D7DBCD00AA3CC8 /* RestaurantResult.swift in Sources */,
+				95EBA50528D7DAD600AA3CC8 /* ViewController.swift in Sources */,
+				95EBA50128D7DAD600AA3CC8 /* AppDelegate.swift in Sources */,
+				95EBA54228D7DC0C00AA3CC8 /* MainPresenter.swift in Sources */,
+				95EBA53828D7DB6000AA3CC8 /* UIImage+Extension.swift in Sources */,
+				95EBA53A28D7DB7D00AA3CC8 /* BaseRestClient.swift in Sources */,
+				95EBA50328D7DAD600AA3CC8 /* SceneDelegate.swift in Sources */,
+				95EBA53628D7DB4300AA3CC8 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95EBA50F28D7DADA00AA3CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EBA51828D7DADA00AA3CC8 /* VicAdvisorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95EBA51928D7DADA00AA3CC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EBA52428D7DADA00AA3CC8 /* VicAdvisorUITestsLaunchTests.swift in Sources */,
+				95EBA52228D7DADA00AA3CC8 /* VicAdvisorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95EBA51528D7DADA00AA3CC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95EBA4FC28D7DAD600AA3CC8 /* VicAdvisor */;
+			targetProxy = 95EBA51428D7DADA00AA3CC8 /* PBXContainerItemProxy */;
+		};
+		95EBA51F28D7DADA00AA3CC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95EBA4FC28D7DAD600AA3CC8 /* VicAdvisor */;
+			targetProxy = 95EBA51E28D7DADA00AA3CC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95EBA50628D7DAD600AA3CC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95EBA50728D7DAD600AA3CC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95EBA50B28D7DAD900AA3CC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95EBA50C28D7DAD900AA3CC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95EBA52528D7DADA00AA3CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95EBA52628D7DADA00AA3CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95EBA52828D7DADA00AA3CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26A3348F5N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VicAdvisor/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changvictor.VicAdvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95EBA52928D7DADA00AA3CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26A3348F5N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VicAdvisor/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changvictor.VicAdvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95EBA52B28D7DADA00AA3CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26A3348F5N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changvictor.VicAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VicAdvisor.app/VicAdvisor";
+			};
+			name = Debug;
+		};
+		95EBA52C28D7DADA00AA3CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26A3348F5N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changvictor.VicAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VicAdvisor.app/VicAdvisor";
+			};
+			name = Release;
+		};
+		95EBA52E28D7DADA00AA3CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26A3348F5N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changvictor.VicAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VicAdvisor;
+			};
+			name = Debug;
+		};
+		95EBA52F28D7DADA00AA3CC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26A3348F5N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changvictor.VicAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VicAdvisor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95EBA4F828D7DAD600AA3CC8 /* Build configuration list for PBXProject "VicAdvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95EBA52528D7DADA00AA3CC8 /* Debug */,
+				95EBA52628D7DADA00AA3CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95EBA52728D7DADA00AA3CC8 /* Build configuration list for PBXNativeTarget "VicAdvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95EBA52828D7DADA00AA3CC8 /* Debug */,
+				95EBA52928D7DADA00AA3CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95EBA52A28D7DADA00AA3CC8 /* Build configuration list for PBXNativeTarget "VicAdvisorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95EBA52B28D7DADA00AA3CC8 /* Debug */,
+				95EBA52C28D7DADA00AA3CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95EBA52D28D7DADA00AA3CC8 /* Build configuration list for PBXNativeTarget "VicAdvisorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95EBA52E28D7DADA00AA3CC8 /* Debug */,
+				95EBA52F28D7DADA00AA3CC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95EBA4F528D7DAD600AA3CC8 /* Project object */;
+}
